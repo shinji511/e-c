@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="e-c.js"></script>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: azure;
+      }
+
+      .baise {
+        background-color: white;
+      }
+      .flex {
+        display: flex;
+      }
+      .flexc {
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" type="text/css" href="e-c.css" />
+  <body class="flex flexc">
+    <div
+      style="
+        height: 100px;
+        text-align: center;
+        background-color: rgb(116, 118, 241);
+        box-shadow: 0px 10px 5px #888888;
+      "
+      class="bshadow"
+    >
+      <img
+        src="prs.jpg"
+        alt="网站图标"
+        width="100"
+        height="100"
+        align="left"
+        style="border-radius: 100%"
+      />
+      <h1>大概是服装diy网站</h1>
+    </div>
+    <div style="flex: 4; text-align: center">
+      <p>还没实现，想象一下吧</p>
+      <form method="post" enctype="multipart/form-data" id="file_upload">
+        <p>图片预览：</p>
+        <img id="image-preview" />
+        <p>
+          <input
+            type="file"
+            id="file"
+            name="upload_image"
+            accept="image/gif, image/jpeg, image/png, image/jpg"
+          />
+          <input type="button" value="下载图片" onclick="save()" />
+        </p>
+      </form>
+      <a href="">不能跳转的收款链接</a>
+    </div>
+    <div style="flex: 1; text-align: center" class="baise">
+      <p>没屁用的底边栏</p>
+    </div>
+    <div></div>
+  </body>
+</html>

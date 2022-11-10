@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: azure;
+      }
+
+      .baise {
+        background-color: white;
+      }
+      .flex {
+        display: flex;
+      }
+      .flexc {
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+
+      a {
+        text-decoration: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        background: linear-gradient(
+          0deg,
+          rgba(96, 9, 240, 1) 0%,
+          rgba(129, 5, 240, 1) 100%
+        );
+        background-size: 400%;
+        width: 400px;
+        height: 100px;
+        color: #fff;
+        line-height: 100px;
+        border-radius: 50px;
+        z-index: 1;
+      }
+      a::before {
+        content: "";
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+        background: linear-gradient(
+          0deg,
+          rgba(96, 9, 240, 1) 0%,
+          rgba(129, 5, 240, 1) 100%
+        );
+        background-size: 100%;
+        border-radius: 50px;
+        filter: blur(20px);
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" type="text/css" href="e-c.css" />
+  <body class="flex flexc">
+    <div
+      style="
+        height: 100px;
+        text-align: center;
+        background-color: rgb(116, 118, 241);
+        box-shadow: 0px 10px 5px #888888;
+      "
+      class="bshadow"
+    >
+      <img
+        src="prs.jpg"
+        alt="网站图标"
+        width="100"
+        height="100"
+        align="left"
+        style="border-radius: 100%"
+      />
+      <h1>大概是服装diy网站</h1>
+    </div>
+    <div style="flex: 4; text-align: center">
+      <a href="index1.html">进入diy界面</a>
+    </div>
+    <div style="flex: 1; text-align: center" class="baise">
+      <p>没屁用的底边栏</p>
+    </div>
+    <div></div>
+  </body>
+</html>
